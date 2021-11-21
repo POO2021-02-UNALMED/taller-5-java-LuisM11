@@ -33,7 +33,7 @@ public class Pez extends Animal {
 		bacalaos++;
 		return new Pez(n,e,"oceano",g,"gris",6);
 	}
-	public String getEscamas() {
+	public String getColorEscamas() {
 		return this.colorEscamas;
 	}
 	public int getCantidadAletas() {

@@ -34,7 +34,7 @@ public class Reptil extends Animal {
 		return new Reptil(n,e,"jungla",g,"blanco",1);
 	}
 
-	public String getEscamas() {
+	public String getColorEscamas() {
 		return this.colorEscamas;
 	}
 	public int getLargoCola() {
