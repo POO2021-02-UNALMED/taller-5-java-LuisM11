@@ -11,7 +11,6 @@ public class Zoologico {
 	public Zoologico(String n, String u,Zona[] z ) {
 		this.nombre =n;
 		this.ubicacion=u;
-		Collections.addAll(this.zonas, z);
 	}
 	public Zoologico(String n, String u) {
 		this(n,u,null);
