@@ -32,7 +32,7 @@ public class Zoologico {
 		
 		return c;
 	}
-	public Vector<Zona> getzonas(){
+	public Vector<Zona> getZona(){
 		return zonas;
 	}
 	public String getNombre() {
