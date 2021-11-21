@@ -2,7 +2,7 @@ package zooAnimales;
 import java.util.Vector;
 
 public class Anfibio extends Animal {
-	private Vector<Anfibio> listado = new Vector<Anfibio>();
+	private static Vector<Anfibio> listado = new Vector<Anfibio>();
 	public static int ranas;
 	public static int salamandras;
 	private String colorPiel;
@@ -19,7 +19,7 @@ public class Anfibio extends Animal {
 		listado.add(this);
 	}
 	
-	public int cantidadAnfibios() {
+	public static int cantidadAnfibios() {
 		return listado.size();
 	}
 	public String movimiento () {

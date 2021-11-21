@@ -2,7 +2,7 @@ package zooAnimales;
 import java.util.Vector;
 
 public class Reptil extends Animal {
-	private Vector<Reptil> listado = new Vector<Reptil>();
+	private static Vector<Reptil> listado = new Vector<Reptil>();
 	public static int iguanas;
 	public static int serpientes;
 	private String colorEscamas;
@@ -19,7 +19,9 @@ public class Reptil extends Animal {
 		listado.add(this);
 	}
 	
-	public void cantidadReptiles() {}
+	public static int cantidadReptiles() {
+		return listado.size();
+	}
 	public String movimiento () {
 		return "reptar";
 	}

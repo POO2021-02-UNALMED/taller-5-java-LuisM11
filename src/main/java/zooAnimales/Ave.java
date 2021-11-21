@@ -2,7 +2,7 @@ package zooAnimales;
 import java.util.*;
 
 public class Ave extends Animal {
-	private  Vector<Ave> listado = new Vector<Ave>();
+	private static Vector<Ave> listado = new Vector<Ave>();
 	public static  int halcones;
 	public  static int aguilas;
 	private String colorPlumas;
@@ -16,7 +16,7 @@ public class Ave extends Animal {
 		this.colorPlumas= c;
 		listado.add(this);
 	}
-	public int cantidadAves() {
+	public static int cantidadAves() {
 		return listado.size();
 	}
 	public String movimiento () {

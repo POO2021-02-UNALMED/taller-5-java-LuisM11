@@ -12,7 +12,9 @@ public class Zoologico {
 		this.nombre =n;
 		this.ubicacion=u;
 		Collections.addAll(this.zonas, z);
-		
+	}
+	public Zoologico(String n, String u) {
+		this(n,u,null);
 	}
 	public void agregarZonas (Zona z) {
 		this.zonas.add(z);

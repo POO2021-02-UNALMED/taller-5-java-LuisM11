@@ -2,7 +2,7 @@ package zooAnimales;
 import java.util.*;
 
 public class Mamifero extends Animal {
-	private Vector<Mamifero> listado = new Vector<Mamifero>();
+	protected static Vector<Mamifero> listado = new Vector<Mamifero>();
 	public static int caballos;
 	public static int leones;
 	private boolean pelaje;
@@ -20,7 +20,7 @@ public class Mamifero extends Animal {
 		this.patas=pa;
 		listado.add(this);
 	}
-	public int cantidadMamiferos() {
+	public static int cantidadMamiferos() {
 		return listado.size();
 	}
 	public static Mamifero crearCaballo(String n, int e, String g ) {

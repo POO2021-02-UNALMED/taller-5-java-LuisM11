@@ -28,13 +28,13 @@ public class Animal {
 	public String movimiento() {
 		return "desplazarse";
 	}
-	public String totalPorTipo() {
-		//faltan #s
-		return "Mamiferos: " + "\n" + "Aves: " + "\n" + "Reptiles: " + "\n" + "Peces: " + "\n" + "Anfibios: " ;
+	public static String totalPorTipo() {
+		
+		return "Mamiferos: " +Mamifero.cantidadMamiferos()+ "\n" + "Aves: " + Ave.cantidadAves()+ "\n" + "Reptiles: " + Reptil.cantidadReptiles()+ "\n" + "Peces: " + Pez.cantidadPeces() +"\n" + "Anfibios: "+ Anfibio.cantidadAnfibios() ;
 		
 	}
 	public String toString() {
-		//faltan ifs, y #
+		
 		return "Mi nombre es " + ", tengo una edad de "+ ", habito en "+ " y mi genero es "+ ", la zona en la que me ubico es "+", en el zoo ";
 	}
 	public String getNombre() {
