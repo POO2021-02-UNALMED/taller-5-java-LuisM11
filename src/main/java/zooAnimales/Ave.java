@@ -2,9 +2,9 @@ package zooAnimales;
 import java.util.*;
 
 public class Ave extends Animal {
-	private static Vector<Ave> listado = new Vector<Ave>();
-	public static int halcones;
-	public static int aguilas;
+	private  Vector<Ave> listado = new Vector<Ave>();
+	public static  int halcones;
+	public  static int aguilas;
 	private String colorPlumas;
 	
 	public Ave() {listado.add(this);}
@@ -22,10 +22,12 @@ public class Ave extends Animal {
 	public String movimiento () {
 		return "volar";
 	}
-	public Ave crearHalcon(String n, int e, String g) { 
+	public static Ave crearHalcon(String n, int e, String g) { 
+		halcones++;
 		return new Ave(n,e,"montanas",g,"cafe glorioso");
 	}
-	public Ave crearAguila(String n, int e, String g) {
+	public static Ave crearAguila(String n, int e, String g) {
+		aguilas++;
 		return new Ave(n,e,"montanas",g,"blanco y amarillo");
 	}
 	

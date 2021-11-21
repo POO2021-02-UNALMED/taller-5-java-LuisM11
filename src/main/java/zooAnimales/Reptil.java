@@ -23,10 +23,12 @@ public class Reptil extends Animal {
 	public String movimiento () {
 		return "reptar";
 	}
-	public Reptil crearIguana(String n, int e, String g) {
+	public static Reptil crearIguana(String n, int e, String g) {
+		iguanas++;
 		return new Reptil(n,e,"humedal",g,"verde",3);
 	}
-	public Reptil crearSerpiente(String n, int e, String g) {
+	public static Reptil crearSerpiente(String n, int e, String g) {
+		serpientes++;
 		return new Reptil(n,e,"jungla",g,"blanco",1);
 	}
 

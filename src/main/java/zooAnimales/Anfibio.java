@@ -25,10 +25,12 @@ public class Anfibio extends Animal {
 	public String movimiento () {
 		return "saltar";
 	}
-	public Anfibio crearRana(String n, int e, String g) {
+	public static Anfibio crearRana(String n, int e, String g) {
+		ranas++;
 		return new Anfibio(n,e,"selva",g,"rojo",true);
 	}
-	public Anfibio crearSalamandra(String n, int e, String g) {
+	public static Anfibio crearSalamandra(String n, int e, String g) {
+		salamandras++;
 		return new Anfibio(n,e,"selva",g,"negro y amarillo",false);
 	}
 	public String getColorPiel() {

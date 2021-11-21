@@ -25,10 +25,12 @@ public class Pez extends Animal {
 	public String movimiento () {
 		return "nadar";
 	}
-	public Pez crearSalmon(String n, int e, String g) {
+	public static Pez crearSalmon(String n, int e, String g) {
+		salmones++;
 		return new Pez(n,e,"oceano",g,"rojo",6);
 	}
-	public Pez crearBacalao(String n, int e, String g) {
+	public static Pez crearBacalao(String n, int e, String g) {
+		bacalaos++;
 		return new Pez(n,e,"oceano",g,"gris",6);
 	}
 	public String getEscamas() {
