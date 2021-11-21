@@ -3,8 +3,8 @@ import java.util.*;
 
 public class Mamifero extends Animal {
 	private Vector<Mamifero> listado = new Vector<Mamifero>();
-	private static int caballos;
-	private static int leones;
+	public static int caballos;
+	public static int leones;
 	private boolean pelaje;
 	private int patas;
 	
@@ -23,13 +23,20 @@ public class Mamifero extends Animal {
 	public int cantidadMamiferos() {
 		return listado.size();
 	}
-	public Mamifero crearCaballo() {
+	public Mamifero crearCaballo(String n, int e, String g ) {
 		caballos++;
-		return new Mamifero(null,0,"pradera",null,true,4);
+		return new Mamifero(n,e,"pradera",g,true,4);
 		
 	}
-	public Mamifero crearLeon() {
+	public Mamifero crearLeon(String n, int e, String g ) {
 		leones++;
-		return new Mamifero(null,0,"selva",null,true,4) ;
+		return new Mamifero(n,e,"selva",g,true,4) ;
+	}
+	
+	public boolean isPelaje() {
+		return this.pelaje;
+	}
+	public int getPatas() {
+		return  this.patas;
 	}
 }
